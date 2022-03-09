@@ -1,0 +1,239 @@
+
+:root {
+    --color-Mainday2 : #F2726A;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    margin: 0;
+}
+.day {
+    text-align: center;
+    color: aqua;
+    padding: 16px 0;
+}
+.backgroundDay1 {
+    background-image: linear-gradient(to right,#4daf54, #3d8880);
+    width: 100%;
+    height:625px;
+}
+.cart {
+    width: 320px;
+    height: 400px;
+    margin: 40px auto;
+    background-color: #272d40;
+    border-radius: 24px;
+    padding: 20px;
+    position: relative;
+}
+.cart__heart {
+}
+.cart__heart,.cart__cast {
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    color: #fff;
+    z-index: 1;
+}
+.cart__cast {
+    right: 20px;
+}
+.cart__img {
+    width: 90%;
+    user-select: none;
+    transition: 0.5s;
+
+}
+.cart__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.cart__title {
+    color: #4DAF54;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    user-select:inherit;
+    transition: 0.5s;
+
+}
+.cart__price {
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 10px 0;
+    transition: 0.5s;
+    user-select: none;
+}
+.cart__size,.cart__color {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    margin-bottom: 12px;
+    transition: 0.5s;
+    user-select: none;
+}
+.cart__color {
+    margin: 12px 0;
+    transition: 0.5s;
+}
+.cart__size span{
+    padding: 4px 10px;
+    border-radius: 8px;
+    background-color: #dadada;
+    margin: 0 5px;
+    color: #272d40;
+
+}
+.cart__color--black,.cart__color--green,.cart__color--red {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    border-radius: 50%;
+
+}
+.cart__color--black {
+    background-color: #000;
+}.cart__color--red {
+    background-color: red;
+}.cart__color--green {
+    background-color: #4daf54;
+}
+.cart__button {
+    transition: 0.5s;
+
+}
+.cart__button button{
+    background-color: #4daf54;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 0 5px;
+    text-align: center;
+    color: #fff;
+    transition: 0.25s;
+
+}
+.cart:hover .cart__img {
+    transform: translateY(-60px) rotate(-20deg);
+}
+.cart:hover .cart__title {
+    transform: translate(-38px, -40px);
+}
+.cart:hover .cart__price {
+    transform: translate(-115px, -40px);
+}
+.cart__color,.cart__size ,.cart__button {
+    transform: translateY(130px);
+    visibility: hidden;
+    opacity: 0;
+}
+.cart:hover .cart__color {
+    visibility: inherit;
+    transform: translateY(-30px);
+    opacity: 1;
+}
+.cart:hover .cart__size {
+    visibility: inherit;
+    transform: translateY(-30px);
+    opacity: 1;
+
+}
+.cart:hover .cart__button {
+    visibility: inherit;
+    opacity: 1;
+    transform: translateY(-30px);
+}
+.cart__button button:hover {
+    transform: scale(90%);
+}
+.cart__button button ,.cart__cast ,.cart__color span ,.cart__size span ,.cart__heart {
+    cursor: pointer;
+}
+/* ============== Day 02 ============================ */
+.backgroundDay2 {
+    background-image: linear-gradient(to right,#00853e, #50c878);
+    width: 100%;
+    height:625px;
+}
+.boxprofile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cardProfile {
+    width: 300px;
+    height: 400px;
+    background-color: #242628;
+    border-radius: 10px;
+    margin: 0 30px;
+    text-align: center;
+    overflow: hidden;
+}
+.cardProfile__img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--color-Mainday2);
+    overflow: hidden;
+    margin: 0 auto;
+    transform: translateY(30px);
+    transition: 0.5s;
+}
+.cardProfile__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.cardProfile__name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+.cardProfile__description {
+    color: var(--color-Mainday2);
+    margin: 12px 0;
+}
+.cardProfile__icon {
+    margin: 20px 0;
+}
+.cardProfile__icon a{
+    color: #fff;
+    font-size: 25px;
+    margin: 0px 15px;
+    transition: 0.25s;
+
+}
+.cardProfile__icon a:hover {
+    color: var(--color-Mainday2);
+}
+.cardProfile__contact button{
+    padding: 8px 32px;
+    border-radius: 8px;
+    border: 1px solid var(--color-Mainday2);
+    background: #242628;
+    color: #fff;
+    transition: 0.25s;
+}
+.cardProfile__contact button:hover {
+    background-color: var(--color-Mainday2);
+}
+.cardProfile__img:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    border: none;
+    transform: unset;
+    
+}
