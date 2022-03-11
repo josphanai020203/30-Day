@@ -17,3 +17,56 @@ closeIcon.addEventListener('click',Toggle);
 CloseBtn.addEventListener('click',Toggle);
 
 // =====================================================================================================================================
+var galleryImages = document.querySelectorAll('.imageItem img');
+var galleryClose = document.querySelector('.close')
+var galleryPrev = document.querySelector('.btnleft')
+var galleryNext = document.querySelector('.btnright')
+var galleryContent = document.querySelector('.gallerryShow-content img')
+var galleryModal = document.querySelector('.gallerryShow')
+var currentIndex = 0
+function showGallery(){
+    if(currentIndex == 0){
+        galleryPrev.style.display = 'none';
+    }
+    else if (currentIndex == 7){
+        galleryNext.style.display = 'none';
+
+    }
+    else {
+        galleryPrev.style.display = 'block';
+        galleryNext.style.display = 'block';
+
+
+    }
+    galleryContent.src = galleryImages[currentIndex].src;
+    galleryModal.classList.add('showGallery');
+}
+    galleryImages.forEach(function(item,index){
+        item.addEventListener('click', function(){
+
+            currentIndex = index;
+            
+            showGallery();
+        })
+
+    })
+galleryPrev.addEventListener('click',function(){
+    currentIndex = currentIndex -1;
+    showGallery();
+    
+})
+galleryNext.addEventListener('click',function(){
+    currentIndex = currentIndex + 1;
+    showGallery();
+    
+})
+galleryClose.addEventListener('click',function(){
+    galleryModal.classList.remove('showGallery');
+
+})
+document.addEventListener('keydown',function(e){
+    if(e.keyCode == 27){
+    galleryModal.classList.remove('showGallery');
+
+    }
+})
