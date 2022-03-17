@@ -69,4 +69,26 @@ document.addEventListener('keydown',function(e){
     galleryModal.classList.remove('showGallery');
 
     }
+    alertBackground.classList.add('hideAlert')
+    detectPressKey.style.display = 'block'
+
+    cricleBox.innerHTML = `${e.keyCode}`
+    contentKey__codeContent.innerHTML = `${e.code}`
+    contentKey__keycontent.innerHTML = `${e.key}`
+    contentKey__whichContent.innerHTML = `${e.which}`
+    contentKey__locationContent.innerHTML = `${e.location}`
 })
+// ======================================= ===================================
+var searchBtn = document.querySelector('.searchBtn')
+var searchBox = document.querySelector('.searchBox')
+searchBtn.addEventListener('click',function(){
+    searchBox.classList.toggle('openSearchBox')
+})
+// ===========================================================
+var cricleBox = document.querySelector('.cricleBox')
+var contentKey__keycontent = document.querySelector('.contentKey__keycontent')
+var contentKey__whichContent = document.querySelector('.contentKey__whichContent')
+var contentKey__codeContent = document.querySelector('.contentKey__codeContent')
+var contentKey__locationContent = document.querySelector('.contentKey__locationContent')
+var detectPressKey = document.querySelector('.detectPressKey')
+var alertBackground = document.querySelector('.alertBackground')
