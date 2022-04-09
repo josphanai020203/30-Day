@@ -1,6 +1,8 @@
 
 :root {
     --color-Mainday2 : #F2726A;
+    --color-success :#28a745;
+    --color-failer :#dc3545;
 }
 html {
     font-family: Arial, Helvetica, sans-serif;
@@ -546,4 +548,290 @@ h1 {
 }
 .detectPressKey {
     display: none;
+}
+/* ========================================== 7 ============================== */
+.backgroundDay7 {
+    background-color: #8CC84C;
+    width: 100%;
+    height:625px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchTags {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.searchTags__name {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    padding: 20px 20px;
+}
+.searchTags__content {
+    border: 1px solid #000;
+    margin: 0 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+}
+.searchTags__tagItem {
+    background-color: #8CC84C;
+    color: #fff;
+    padding:10px ;
+    margin: 10px 0 10px 10px;
+    border-radius: 8px;
+    list-style-type: none;
+    user-select: none;
+    font-size: 16px;
+    user-select: none;
+}
+.tagClose {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.searchTags__input {
+    user-select: none;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+}
+.searchTags__btn {
+    background-color: #8CC84C;
+    margin: 20px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    width: 30%;
+    color: #fff;
+    font-size: 20px;
+    user-select: none;
+}
+/* ========================= 8 ================================ */
+.backgroundDay8 {
+    background: linear-gradient(120deg, #3ca7ee, #9b408f);
+    width: 100%;
+    height:625px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.validateForm {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    padding: 40px;
+
+}
+.mainTitle {
+    margin: 20px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.form-email,.form-password,.form-username {
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+    position: relative;
+}
+.userName,.email,.password,.password2 {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-bottom: 2px solid #adadad;
+}.form-username span {
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    background-color: var(--color-success);
+    transition: 0.25s linear;
+    top: 38px;
+    left: 0;
+}
+.form-username input:focus~span {
+    width: 100%;
+}
+.form-email span {
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    background-color: var(--color-success);
+    transition: 0.25s linear;
+    top: 38px;
+    left: 0;
+}
+.form-email input:focus~span {
+    width: 100%;
+}
+.form-password span {
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    background-color: var(--color-success);
+    transition: 0.25s linear;
+    top: 38px;
+    left: 0;
+}
+.form-password input:focus~span {
+    width: 100%;
+}
+.validateForm small {
+    color: var(--color-failer);
+}
+.login {
+    border: none;
+    background-color: #2691D9;
+    width: 100%;
+    border-radius:30px;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+.login:hover {
+    background-color: #08609a;
+}
+.validateForm a{
+    text-decoration: none;
+    color: #2691D9;
+}
+.validateForm a:hover {
+    text-decoration: underline;
+}
+.error input{
+    border-bottom: 2px solid var(--color-failer);
+    
+}
+.success input{
+    border-bottom: 2px solid var(--color-success);
+}
+.validateForm form {
+    width: 100%;
+}
+/* ======================================= 9 ============================================ */
+.backgroundDay9 {
+    background: linear-gradient(120deg, rgba(0,0,0,0.8), rgba(0,0,0,0.2)) ,url(/acsets/img/hot.png) no-repeat center/cover;
+    
+    width: 100%;
+    height:625px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contentWeather {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s linear;
+    
+}
+.hideContent {
+    visibility: hidden;
+    opacity: 0;
+}
+#weather {
+    width: 30%;
+    background: url(/acsets/img/hot.png) no-repeat center /cover;
+    padding: 20px;
+    border-radius: 8px;
+}
+.searchPlace {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+    transition: 0.5s linear;
+
+}
+.searchPlace:focus {
+    border-radius: 0px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    opacity: 0.8;
+}
+.city,.comman,.country {
+    font-size:32px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 2px 3px #000;
+}
+.hot .backgroundDay9{
+    background: linear-gradient(120deg, rgba(0,0,0,0.8), rgba(0,0,0,0.2)) ,url(/acsets/img/hot.png) no-repeat center/cover;
+}
+.hot{
+    background: url(/acsets/img/hot.png) no-repeat center /cover !important;
+
+}
+.cold .backgroundDay9{
+    background: linear-gradient(120deg, rgba(0,0,0,0.8), rgba(0,0,0,0.2)) ,url(/acsets/img/cold.png) no-repeat center/cover;
+}
+.cold{
+    background: url(/acsets/img/cold.png) no-repeat center /cover !important;
+
+}
+.capital {
+    margin-top: 40px;
+}
+.times {
+    margin:  20px 0;
+}
+.temperature {
+    font-size: 60px;
+    text-shadow: 3px 3px rgba(0,0,0,0.8);
+    background-color: rgba(255, 255, 255, 0.5) ;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    font-weight: 800;
+    
+}
+.moreDetail {
+    font-size: 35px;
+    text-shadow: 1px 1px rgba(0,0,0,0.8);
+    font-weight: 600;
+    margin: 20px 0;
+
+}
+.footer-des {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+
+}
+.wind,.foresight,.humidity {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+}
+.footer-des i {
+    margin-bottom: 5px;
 }
